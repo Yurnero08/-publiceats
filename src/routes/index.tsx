@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, createHashRouter } from "react-router-dom";
 import { Paths } from "./paths";
 import Menu from "../pages/Menu";
 import Login from "../pages/Login";
@@ -8,7 +8,7 @@ import Profile from "../pages/Profile";
 import Cart from "../pages/Cart";
 import PublicRoute from "../HOC/PublicRoute";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
     {
       path: Paths.menu,
       element: <PrivateRoute/>,

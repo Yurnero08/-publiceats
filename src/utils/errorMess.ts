@@ -1,5 +1,5 @@
 export function errorMess(error: any, type?: string | undefined) {
-    let response = error.response.data;
+    let response = error.response?.data;
     let text = '';
     for (const key in response) {
         if(key){
